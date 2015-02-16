@@ -43,6 +43,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         buttonInfo.setOnClickListener(this);
 
     }
+    /**
+     * This method handles when one of the buttons are clicked and which activities are started. 
+     * @param v - next screen. 
+     * 
+     * /
     public void onClick(View v){
         /** Button that was pressed. */
         Button b = (Button) findViewById(v.getId());
@@ -51,12 +56,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent imageIn = new Intent(this,Image.class);
         Intent infoIn = new Intent(this,Info.class);
 
-        /** Getting values in the two text fields. */
-      //  num1 = Integer.parseInt(text1.getText().toString());
-        //num2 = Integer.parseInt(text2.getText().toString());
 
 
-        /** Either adding or subtracting based on which button was pressed. */
+        /** Finding the ID of the button and starting the appropriate activity. */
         if(b.getId() == R.id.one_letter)    this.startActivity(oneIn);
 
 
@@ -65,11 +67,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         if(b.getId() == R.id.image_button) this.startActivity(imageIn);
 
         if(b.getId() == R.id.info_button) this.startActivity(infoIn);
-        /** Store the result and update the result text box. */
-        //String result = Integer.toString(this.result);
-        //tvResult.setText(result);
-        //tvResult.setKeyListener(null);
-        //  this.startActivity(in);
+     
 
     }
 
