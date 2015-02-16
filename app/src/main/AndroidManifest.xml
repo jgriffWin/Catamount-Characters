@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jeremiah.catamountcharacters" >
+
+    <application
+
+        android:icon="@drawable/ic_cathead"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".ChooseOne"
+            android:label="@string/title_activity_choose_one" >
+        </activity>
+        <activity
+            android:name=".ChooseTwo"
+            android:label="@string/title_activity_choose_two" >
+        </activity>
+        <activity
+            android:name=".Image"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name=".OneCharacter"
+            android:label="@string/title_activity_one_character" >
+        </activity>
+        <activity
+            android:name=".TwoCharacter"
+            android:label="@string/title_activity_two_character" >
+        </activity>
+        <activity
+            android:allowBackup="true"
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

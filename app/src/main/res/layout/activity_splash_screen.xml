@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="com.example.jeremiah.catamountcharacters.SplashScreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/catamount_purple">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="246dp"
+            android:layout_height="68dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/catamount"
+            android:id="@+id/splash_text1"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="@color/catamount_gold"
+            android:textSize="45dp"
+            android:textStyle="bold|italic"
+            android:typeface="sans"
+            android:layout_marginTop="60dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cathead2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/characters"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textAlignment="center"
+            android:textColor="@color/catamount_gold"
+            android:textSize="45dp"
+            android:textStyle="bold|italic"
+            android:typeface="sans"
+            android:layout_marginBottom="60dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
